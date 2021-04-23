@@ -1,0 +1,602 @@
+/* header 开始 */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font: 14px "MI Lan Pro", Arial, "Microsoft YaHei", 黑体, 宋体, sans-serif;
+    /* height: 4500px; */
+}
+
+.wrapper{
+    width: 1002px;
+    margin:0 auto;
+}
+
+ul li{
+    list-style: none;
+}
+
+ul a{
+    text-decoration: none;
+}
+
+header{
+    background: #cccccc;
+    height: 40px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+header li{
+    float: left;
+    line-height: 40px;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+}
+
+header .login{
+    float:right;
+}
+
+header a,span{
+    color: #fff;
+}
+
+header span{
+    margin:0 6px;
+}
+
+/* header结束 */
+/* nav开始 */
+img{
+    width: 150px;
+    height: 49.53px;
+}
+.nav-list a{
+    list-style: none;
+}
+
+
+
+nav{
+    background: #fff;
+    height: 76px;
+    line-height: 76px;
+    display: flex;
+    position: sticky;
+    top: 40px;
+    left: 0;
+    z-index: 1;
+}
+
+nav img{
+    margin: 15px 0;
+}
+
+.nav-list{
+    float: right;  
+}
+.nav-item{
+    float: left;
+    font:"MI Lan Pro", Arial, "Microsoft YaHei", 黑体, 宋体, sans-serif 16px;
+    margin:0 20px;
+    
+}
+
+.sub-item a{
+    text-align: center;
+    display: block;
+    font-size: 16px;
+    margin-bottom: 10px;
+    height: 22px;
+    line-height: 22px;
+}
+
+nav a{
+    color: black;
+}
+
+
+
+nav li a:hover{
+    font-weight: bold;
+}
+
+.sub-list{
+    background: #fff;
+    width: 160px;
+    height: 160px;
+    padding: 20px 0;
+    margin-top: 1px;
+    border-top: 1px solid #f0f0f0;
+    position: absolute;
+    top: 64px;
+    right: 506px;
+    display: none;
+}
+
+.nav-list .sub-list::before{
+    content: "";
+    display: block;
+    background: #fff;
+    width: 18px;
+    height: 18px;
+    transform: rotate(45deg);
+    position: absolute;
+    top: -10px;
+    left: 67px;
+    border-top: #f0f0f0 1px solid;
+    border-left: #f0f0f0 1px solid;
+}
+
+.sub-toggle{
+    padding-bottom: 20px;
+}
+
+.nav-list .sub-toggle:hover+.sub-list{
+    display: block;
+}
+
+.sub-list:hover{
+    display: block;
+   }
+
+nav .nav-list :last-child{
+    margin-right: 0;
+}
+
+/* nav结束 */
+/* banner开始 */
+
+#banner{
+    height: 450.3px;
+    background: url(./imgs/小米页眉.png) center no-repeat rgb(1, 2, 216);
+    background-size: contain;   
+}
+
+.word{
+    font-size: 50px;
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 15px;
+    /* height: 225.15px; */
+    font-family: "MI Lan Pro", Arial, "Microsoft YaHei", 黑体, 宋体, sans-serif;
+    text-align: center;
+}
+
+#banner #p1{
+    padding-top: 175.15px;
+
+}
+
+#banner #p2{
+    padding-bottom: 145.15px;
+}
+
+/* #banner #box{
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+} */
+/* banner结束 */
+/* lpicture开始 */
+#lpicture{
+    height: 39px;
+    background: rgb(1, 2, 216);
+}
+
+#lpicture #left{
+    /* width: cacl(50%-50px); */
+    width: 891px;
+    height: 39px;
+    background: white;
+    float:left;
+}
+
+#lpicture #right{
+    width: 892px;
+    height: 39px;
+    background: white;
+    float:right;
+}
+#lpicture img{
+    width: 120px;
+    height: 39px;
+}
+/* lpicuture结束 */
+/* paragraph开始 */
+#paragraph{
+    height: 263px;
+    margin: 0 auto;
+    display: flex;
+    padding-top: 100px;
+    padding-left: 532px;
+}
+
+#paragraph div{
+    text-indent:36px;
+    /* align-items: center;
+    justify-content: center; */
+    width: 840px;
+    height: 108px;
+    font-size: 18px;
+}
+/* paragraph结束 */
+/* main开始 */
+main{
+    height: 844px;
+    background: #f7fbff;
+    padding: 90px 0 60px;
+}
+
+#word1{
+    text-align: center;
+    font-size: 42px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    color: #01103e;
+}
+
+main .picture-item{
+    float: left;
+    padding: 30px;
+}
+
+#picture1{
+    width: 495px;
+    height: 260px;
+    box-sizing: border-box;
+    margin-right: 12px;
+    margin-bottom: 12px;
+    background: url(./imgs/图1.png) center no-repeat;
+}
+
+#picture2{
+    width: 495px;
+    height: 260px;
+    box-sizing: border-box;
+    margin-bottom: 12px;
+    background: url(./imgs/图2.png) center no-repeat;
+}
+
+#picture3{
+    width: 495px;
+    height: 260px;
+    box-sizing: border-box;
+    margin-right: 12px;
+    margin-bottom: 12px;
+    background: url(./imgs/图3.png) center no-repeat;
+}
+
+#picture4{
+    width: 495px;
+    height: 260px;
+    box-sizing: border-box;
+    margin-bottom: 12px;
+    background: url(./imgs/图4.png) center no-repeat;
+}
+
+#picture5{
+    width: 495px;
+    height: 260px;
+    box-sizing: border-box;
+    margin-right: 12px;
+    margin-bottom: 12px;
+    background: url(./imgs/图5.png) center no-repeat;
+}
+
+#picture6{
+    width: 495px;
+    height: 260px;
+    box-sizing: border-box;
+    margin-bottom: 12px;
+    background: url(./imgs/图6.png) center no-repeat;
+}
+
+.btittle{
+    font-size: 32px;
+    font-weight: 500;
+}  
+
+.ltittle{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#content1{
+    padding-right: 100px;
+}
+#content2{
+    padding-right: 100px;
+}
+#content3{
+    padding-right: 170px;
+}
+#content4{
+    padding-right: 155px;
+}
+#content5{
+    padding-right: 170px;
+}
+#content6{
+    padding-right: 280px;
+}
+
+.look{
+    display: inline-block;
+    /* width: 150px; */
+    padding: 5px;
+    border-radius: 39px;
+    background: #046efb;
+    margin-top: 30px;
+    /* position: absolute;
+    top: 0px;
+    right: 0px; */
+}
+.alook{
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none
+}
+/* main结束 */
+/* Logo开始 */
+#Logo{
+    height: 400px;
+    background: #f7fbff;
+    padding-top: 200px;
+}
+
+.logo{
+    background: #eef5ff;
+    height: 224px;
+    width: 250.5px;
+    float: left;
+    padding: 0 27px;
+    box-sizing: border-box;
+}
+
+.lp{
+    height: 76px;
+    margin-top: 40px;
+    margin-bottom: 7px;
+    text-align: center;
+    box-sizing: border-box;
+}
+#Logo img{
+    height: 76px;
+    width: 76px;
+}
+
+.bigword{
+    font-size: 24px;
+    color: #000a1f;
+    font-weight: 500;
+    margin-bottom: 10px;
+    text-align: center
+}
+.littleword{
+    color: #333;
+    font-size: 16px;
+}
+/* Logo结束 */
+/* fellow开始 */
+#fellow{
+    height: 500px;
+}
+
+#partner{
+    margin-top: 90px;
+    margin-bottom: 48px;
+    text-align: center;
+    font-size: 42px;
+    color: #000a1f;
+    font-weight: 500;
+}
+
+.bank{
+    width: 190px;
+    height: 84px;
+    float: left;
+    box-sizing: border-box;
+    margin-right: 8px;
+    margin-bottom: 12px;
+}
+
+#fellow img{
+    width: 190px;
+    height: 84px;
+}
+/* fellow结束 */
+/* footer开始 */
+footer{
+    height: 390px;
+    background: #1f222c;
+    padding-top: 100px;
+    color: #fff;
+}
+
+footer h1{
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+#line{
+    width: 72px;
+    height: 4px;
+    background: #fff;
+    margin-bottom: 20px;
+}
+
+#time{
+    font-size: 16px;
+    opacity: .6;
+    font-weight: 300;
+    margin-bottom: 45px;
+}
+
+#business,#address{
+    font-size: 16px;
+}
+
+#copyright{
+    margin-top: 45px;
+    font-size: 14px;
+}
+
+#background{
+    width: 506px;
+    height: 464px;
+    background:url(./imgs/背景.png) center no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 3173px;
+    right: 500px;
+}
+
+.bg-item{
+    float: left;
+    position: relative;
+    top: 50px;
+    left: 200px;
+}
+
+.bg-item a{
+    color: #fff;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+#background img{
+    width: 100px;
+    height: 100px;
+}
+
+
+#appbox{
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    top: 150px;
+    right: 0px;
+
+    float: left;
+}
+
+#app1{
+    position: relative;
+    top: 0;
+    right: 0;
+}
+#app2{
+    position: relative;
+    top: -103px;
+    right: -150px;
+}
+#app3{
+    position: relative;
+    top: -90px;
+    right: 0;
+}
+#app4{
+    position: relative;
+    top: -109px;
+    right: -160px;
+}
+/* footer结束 */
+/* fix开始 */
+
+#fix{
+    position: fixed;
+    /* height: 400px; */
+    width: 84px;
+    background: #fff;
+    box-sizing: border-box;
+    top: 500px;
+    right: 0;
+    padding-bottom: 8px;
+}
+
+#fix #download{
+    text-align:center;
+    height: 34px;
+    color: #fff;
+    background: blue;
+    border-radius: 0 0 8px 8px;
+    padding-top: 5px;
+}
+
+#white{
+    height: 20px;
+    background: #fff;
+}
+
+#fix img{
+    width: 48px;
+    height: 48px;
+}
+
+#fix .tip{
+    text-align: center;
+}
+
+#fix .text{
+    font-size: 12px;
+    text-align: center;
+    color: #000a1f;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+#fix #backgroundapp1{
+    text-align: center;
+    display: none;
+    position: absolute;
+    top: 55px;
+    right: 93px;
+    font-size: 12px;
+}
+#backgroundapp1 img{
+    width: 58px;
+    height: 58px;
+}
+
+
+
+#tip1 a:hover+ #backgroundapp1{
+    display: block;  
+}
+
+#backgroundapp1:hover{
+    display: block;
+   }
+
+
+   #fix #backgroundapp2{
+    text-align: center;
+    display: none;
+    position: absolute;
+    top: 130px;
+    right: 93px;
+    font-size: 12px;
+}
+    #backgroundapp2 img{
+    width: 58px;
+    height: 58px;
+}
+
+
+
+    #tip2 a:hover+ #backgroundapp2{
+    display: block;  
+}
+
+    #backgroundapp2:hover{
+    display: block;
+   }
+/* fix结束 */
